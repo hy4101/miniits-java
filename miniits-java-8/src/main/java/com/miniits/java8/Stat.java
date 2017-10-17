@@ -1,4 +1,4 @@
-package com.java8;
+package com.miniits.java8;
 
 import org.junit.Test;
 
@@ -20,6 +20,7 @@ public class Stat {
 
     @Test
     public void miniitsInit() {
+
         List<String> names1 = new ArrayList<String>();
         names1.add("31");
         names1.add("2");
