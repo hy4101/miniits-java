@@ -38,5 +38,4 @@ public class Lambda {
     private int fun(int a, int b, ILambda mathOperation) {
         return mathOperation.lm(a, b);
     }
-
 }
