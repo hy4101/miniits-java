@@ -16,7 +16,7 @@ import java.util.List;
  * ***
  */
 
-public class Stat {
+public class Start {
 
     @Test
     public void miniitsInit() {
