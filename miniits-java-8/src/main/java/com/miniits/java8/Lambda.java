@@ -1,9 +1,8 @@
 package com.miniits.java8;
 
-import org.junit.Test;
 
 /**
- * @author: wq
+ * @author: WWW.MINIITS.COM
  * @Date: 2017/10/17
  * @Time: 20:46
  * <p>
@@ -11,8 +10,8 @@ import org.junit.Test;
  * ***
  */
 public class Lambda {
-    @Test
-    public void LambdaTest() {
+
+    public static void main(String[] args) {
 
         // 类型声明-不带花括号
         ILambda addition = (int a, int b) -> a + b;
@@ -35,7 +34,7 @@ public class Lambda {
         int lm(int a, int b);
     }
 
-    private int fun(int a, int b, ILambda mathOperation) {
+    private static int fun(int a, int b, ILambda mathOperation) {
         return mathOperation.lm(a, b);
     }
 }

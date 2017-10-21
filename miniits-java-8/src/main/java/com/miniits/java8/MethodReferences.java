@@ -1,13 +1,11 @@
 package com.miniits.java8;
 
-import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 
 /**
- * @author: wq
+ * @author: WWW.MINIITS.COM
  * @Date: 2017/10/19
  * @Time: 17:18
  * <p>
@@ -35,8 +33,7 @@ public class MethodReferences {
         System.out.println("id: " + this.id);
     }
 
-    @Test
-    public void test() {
+    public static void main(String[] args) {
         // 1 、构造器引用：它的语法是Class::new，或者更一般的Class< T >::new实例如下：
         final MethodReferences methodReferences = MethodReferences.get(MethodReferences::new);
         final List<MethodReferences> methodReferencesList = Arrays.asList(methodReferences);
@@ -52,10 +49,11 @@ public class MethodReferences {
          */
         methodReferences.id = "www";
         methodReferencesList.forEach(methodReferences::follow);
+
+        test2();
     }
 
-    @Test
-    public void test2() {
+    public static void test2() {
         List<Integer> s = Arrays.asList(new Integer[]{1, 2, 3, 4, 5, 6});
         s.forEach(System.out::println);
     }
